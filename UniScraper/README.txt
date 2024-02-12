@@ -1,6 +1,6 @@
 # UniScraper
 
-UniScraper is an OpenAI scraping plugin that allows users to scrape data from websites. It is designed to be run solely on Python and utilizes a Flask app running on localhost port 7250.
+UniScraper is an OpenAI scraping plugin that allows users to scrape data from websites. The aim of UniScraper is to comprehensively scrape and summarize information from even the most secure websites, given that most web scraping ChatGPT plugins struggle to scrape websites with even mildly competent anti-scraping measures put in place. It is designed to be run solely on Python and utilizes a Flask app running on localhost port 7250.
 
 ## Getting Started
 
