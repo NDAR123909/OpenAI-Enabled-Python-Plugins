@@ -1,0 +1,54 @@
+openapi: 3.0.1
+info:
+    title: Uni Scraper
+    description: Retrieve scraped information from a website on a certain date and time.
+    version: "v1"
+servers:
+    - url: http://127.0.0.1:7250/
+paths:
+    /scrape:
+        post:
+            operationId: triggerScraping
+            summary: Trigger scraping of a website at a specified date and time.
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            type: object
+                            properties:
+                                url:
+                                    type: string
+                                    description: The URL of the website to be scraped.
+                                loop_time:
+                                    type: string
+                                    description: The specific date and time (MM/DD/YYYY, hh:mm AM/PM) for scraping.
+            responses:
+                "200":
+                    description: Successfully triggered scraping.
+                "400":
+                    description: Bad request. Check your input parameters.
+
+    /logo.png:
+        get:
+            operationId: getPluginLogo
+            summary: Get the logo for the Uni Scraper plugin.
+            responses:
+                "200":
+                    description: OK
+
+    /openapi.yaml:
+        get:
+            operationId: getOpenAPISpec
+            summary: Get the OpenAPI specification for the Uni Scraper plugin.
+            responses:
+                "200":
+                    description: OK
+
+    /openai/chat/completions:
+        post:
+            operationId: generateChatCompletions
+            summary: Generate the Chat Completions
+            responses:
+                "200":  
+                    description: OK
