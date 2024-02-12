@@ -1,19 +1,17 @@
 {
     "schema_version": "v1",
-    "name_for_human": "${nameForHuman}",
-    "name_for_model": "${nameForModel}",
-    "description_for_human": "${descriptionForHuman}",
-    "description_for_model": "${manifestPrompt}",
+    "name_for_human": "Uni Scraper",
+    "name_for_model": "UniScraper",
+    "description_for_human": "Retrieve scraped information from a website on a certain date and time.",
+    "description_for_model": "Retrieve scraped information from a website on a certain date and time.  Always display results using numbered lists.",
     "auth": {
-      "type": "none"
+        "type": "none"
     },
     "api": {
-      "type": "openapi",
-      "url": "http://localhost:${port}/openapi.yaml",
-      "is_user_authenticated": false
+        "type": "openapi",
+        "url": "http://127.0.0.1:7250/openapi.yaml"
     },
-    "logo_url": "http://localhost:${port}/logo.png",
-    "contact_email": "legal@example.com",
-    "legal_info_url": "http://example.com/legal"
-  }
-  
+    "logo_url": "http://127.0.0.1:7250/logo.png",
+    "contact_email": "noahriego2005@gmail.com",
+    "legal_info_url": "https://example.com/legal"
+}
