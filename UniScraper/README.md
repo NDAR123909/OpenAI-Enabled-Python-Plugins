@@ -40,5 +40,3 @@ Please note that UniScraper is particularly effective at scraping websites with 
 ## License
 
 UniScraper is an open-source project.
-
-Good! If you would like to generate a new README.txt file, please provide the new file information.
