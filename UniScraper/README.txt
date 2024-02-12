@@ -33,7 +33,7 @@ curl -X POST -H "Content-Type: application/json" -d "{\"url\": \"https://edition
 ```
 
 2. Wait until the designated time and date for the scraping to occur.
-3. Once the scraping is triggered successfully, the scraped information will appear in a JSON output in the code editor, and the command terminal will display the message "scraping triggered successfully".
+3. Once the scraping is triggered successfully, the scraped information will appear in a JSON output in the code editor, and the command terminal will display the message "message: scraping triggered successfully".
 
 Please note that UniScraper is particularly effective at scraping websites with heavy anti-scraping measures.
 
